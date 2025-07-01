@@ -1,44 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Choose a website</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="mb-5">GIT & Bootstrap Collaborative Project</h1>
-            <div class="row">
-                <div class="col-sm-4 bg-dark text-center">
-                    <a href="./website/designs/thumb.jpg"><img style="max-height: 400px;" class="img-responsive" src="website/designs/thumb.jpg"></img></a>
-                </div>
-                <div class="col-sm">
-                    <h2>One Page Wonder - Start Bootstrap Template</h2>
-                    <a class="btn btn-primary" href="./website/">Live Version</a>
-                    <a class="btn btn-warning" href="./website/designs/thumb.jpg">How it Should Look</a>
-                    <a class="btn btn-danger" href="./website/designs/guide.jpg">See the Guide</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Knock Your Socks Off</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .section {
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .header {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #f4f4f4;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .portfolio {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .portfolio-item {
+      width: 30%;
+      text-align: center;
+      min-width: 250px;
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+    .contact input, .contact textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Will Knock Your Socks Off</h1>
+    <img src="https://picsum.photos/800/200" alt="Skyline">
+  </div>
 
-                    <div>
-                        <h2>Tips:</h2>
-                        <p>Copy and tweak components from <a href="https://getbootstrap.com/" target="_blank" >getbootstrap.com</a>.</p>
-                        <p>If you are looking at an example from <a href="https://getbootstrap.com/docs/5.1/examples/" target="_blank">https://getbootstrap.com/docs/5.1/examples/</a>, you can use the inspector (right mouse click to open this panel up) and then select the section you want in the "Elements" tab. Then go to copy, and copy element to quickly add to your project.</p>
-                        <p>To push changes to the website, remember this sequence:</p>
-                            <ul>
-                                <li>git add .</li>
-                                <li>git commit -m "what you modified"</li>
-                                <li>git push</li>
-                            </ul>
-                            <p>To see changes from teammates:</p>
-                                <ul>
-                                    <li>git pull</li>
-                                </ul>
-                                <p>To customize elements, use the style.css file located in assets/css.</p>
-                    </div>
-                </div>
-            </div>
+  <div class="section flex">
+    <div>
+      <h2>This First Heading Will Catch Your Eye</h2>
+      <p>Descubre nuestras gafas con estilo retro y protección UV. Ideales para quienes buscan calidad, diseño y durabilidad en cada mirada.</p>
+    </div>
+    <img src="https://picsum.photos/150/150" alt="Bearded man">
+  </div>
 
-        </div>
+  <div class="section flex">
+    <img src="https://picsum.photos/150/150?2" alt="Typing hands">
+    <div>
+      <h3>The Second Heading Is Pretty Cool Too.</h3>
+      <p>Encuentra las gafas perfectas para cada ocasión: lectura, sol o pantallas. Nuestro catálogo está pensado para combinar funcionalidad y moda.</p>
+    </div>
+  </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="section">
+    <h3>Portfolio</h3>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://picsum.photos/700/400?1" alt="Project 1">
+        <h4>Gafas Clásicas</h4>
+        <p>Montura de metal, diseño atemporal. Elegancia para todos los días.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://picsum.photos/700/400?2" alt="Project 2">
+        <h4>Gafas de Sol</h4>
+        <p>Protección UV y estilo veraniego. Tus ojos lo agradecerán.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://picsum.photos/700/400?3" alt="Project 3">
+        <h4>Blue Light Block</h4>
+        <p>Especial para pantallas. Evita el cansancio visual con estilo.</p>
+      </div>
+    </div>
+  </div>
 
-    </body>
+  <div class="section contact">
+    <h3>Contact</h3>
+    <p>¿Tienes dudas o quieres saber más? Escríbenos y te asesoramos en tu compra de gafas ideal.</p>
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo electrónico">
+      <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer style="text-align:center; padding:20px; font-size:12px;">
+    Copyright &copy; The Glasses Store 2025
+  </footer>
+</body>
 </html>
